@@ -1,5 +1,5 @@
-import Card from "components/Card";
-import React, { FC, ReactNode, useState } from "react";
+import AboutCard from "components/AboutCard";
+import React, { FC, ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
@@ -18,7 +18,15 @@ const AppLayout: FC<Props> = ({ children }) => {
           className="container mx-auto overflow-hidden"
           style={{ maxHeight: "700px", height: "100%" }}
         >
-          {children}
+          <div
+            className="grid grid-cols-1 md:grid-cols-8"
+            style={{ maxHeight: "700px", height: "100%" }}
+          >
+            <div className="md:col-span-3 z-50">
+              <AboutCard />
+            </div>
+            <div className="relative md:col-span-5">{children}</div>
+          </div>
         </div>
       </div>
     </div>
