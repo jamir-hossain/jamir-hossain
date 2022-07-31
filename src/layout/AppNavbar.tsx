@@ -4,6 +4,7 @@ import navList from "utils/nav-list";
 
 const AppNavbar = () => {
   const { navHandler } = useApp();
+
   return (
     <div className="flex items-center justify-between">
       {navList.map((item) => {
