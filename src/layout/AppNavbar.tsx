@@ -13,7 +13,7 @@ const AppNavbar = () => {
           <button
             key={title}
             onClick={() => navHandler(url.length > 0 ? `/#${url}` : "/")}
-            className="flex flex-col items-center justify-center hover:fill-primary hover:text-primary hover:bg-gray-100 w-full rounded-md mx-1 py-1 transition duration-200"
+            className="nav-btn hover:bg-gray-100"
           >
             <Icon className="w-5 mr-1 " />
             {title}

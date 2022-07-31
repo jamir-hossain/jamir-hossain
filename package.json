@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
+    "i": "^0.3.7",
     "next": "12.2.3",
+    "npm": "^8.15.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-html-props": "^1.0.33"
+    "react-html-props": "^1.0.33",
+    "simplebar-react": "^2.4.1"
   },
   "devDependencies": {
     "@types/node": "18.6.1",

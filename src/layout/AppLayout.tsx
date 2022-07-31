@@ -1,5 +1,5 @@
-import AboutCard from "components/AboutCard";
 import React, { FC, ReactNode } from "react";
+import ProfileCard from "components/ProfileCard";
 
 interface Props {
   children: ReactNode;
@@ -23,7 +23,7 @@ const AppLayout: FC<Props> = ({ children }) => {
             style={{ maxHeight: "700px", height: "100%" }}
           >
             <div className="md:col-span-3 z-50">
-              <AboutCard />
+              <ProfileCard />
             </div>
             <div className="relative md:col-span-5">{children}</div>
           </div>

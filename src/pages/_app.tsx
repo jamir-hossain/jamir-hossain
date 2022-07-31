@@ -1,8 +1,9 @@
 import "styles/index.css";
+import Head from "next/head";
 import "styles/layout-bg.css";
+import "simplebar/dist/simplebar.min.css";
 import type { AppProps } from "next/app";
 import AppLayout from "layout/AppLayout";
-import Head from "next/head";
 import { AppContextProvider } from "contexts/AppContext";
 
 function MyApp({ Component, pageProps }: AppProps) {

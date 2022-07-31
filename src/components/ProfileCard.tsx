@@ -5,7 +5,7 @@ import useApp from "hooks/useApp";
 import DownloadIcon from "icons/DownloadIcon";
 import AwardIcon from "icons/AwardIcon";
 
-const AboutCard = () => {
+const ProfileCard = () => {
   const { navHandler } = useApp();
 
   return (
@@ -17,15 +17,15 @@ const AboutCard = () => {
 
         <div className="border-t border-gray-300 flex items-center justify-between">
           <button
-            onClick={() => ""}
-            className="flex items-center justify-center hover:fill-primary hover:text-primary w-full rounded-md mx-1 py-4 transition duration-200"
+            onClick={() => console.log("")}
+            className="nav-btn flex-row py-4"
           >
             Download CV
             <DownloadIcon className="w-3 ml-2 " />
           </button>
           <button
             onClick={() => navHandler("/#achievements")}
-            className="flex items-center justify-center hover:fill-primary hover:text-primary w-full rounded-md mx-1 py-4 transition duration-200"
+            className="nav-btn flex-row py-4"
           >
             Achievements
             <AwardIcon className="w-3 ml-2 " />
@@ -36,4 +36,4 @@ const AboutCard = () => {
   );
 };
 
-export default AboutCard;
+export default ProfileCard;

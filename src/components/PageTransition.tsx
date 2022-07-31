@@ -1,5 +1,6 @@
 import { Transition } from "@headlessui/react";
 import React, { FC, ReactNode } from "react";
+import SimpleBar from "simplebar-react";
 
 interface Props {
   show: boolean;
@@ -17,7 +18,7 @@ const PageTransition: FC<Props> = ({ show, children }) => {
       leaveTo="-translate-x-full opacity-0"
       className="absolute top-4 bottom-4 m-auto bg-white rounded-r-lg w-full"
     >
-      {children}
+      <SimpleBar style={{ height: "100%" }}>{children}</SimpleBar>
     </Transition>
   );
 };
