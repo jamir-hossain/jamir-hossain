@@ -11,9 +11,11 @@ const About = () => {
   return (
     <PageTransition show={activeNav === "/"}>
       <Breadcrumb title="About Me" />
-      <AboutText />
-      <WorkingExperience />
-      <Education />
+      <div className=" p-6 ">
+        <AboutText />
+        <WorkingExperience className="py-10" />
+        <Education />
+      </div>
     </PageTransition>
   );
 };

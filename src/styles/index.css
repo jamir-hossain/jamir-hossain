@@ -31,4 +31,13 @@
   h6 {
     @apply text-base;
   }
+  thead {
+    @apply bg-gray-100 border-b;
+  }
+  th {
+    @apply text-sm text-gray-900 px-4 py-2 text-left font-bold;
+  }
+  td {
+    @apply text-sm text-gray-900 font-light px-4 py-3 whitespace-nowrap;
+  }
 }
