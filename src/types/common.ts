@@ -6,3 +6,14 @@ export type SkillType = {
     image: string;
   }[];
 };
+
+export type ProjectType = {
+  id: number;
+  name: string;
+  title: string;
+  thumbnail: string;
+  description: string;
+  features?: any;
+  technologies: string[];
+  live_url: string;
+};

@@ -4,28 +4,19 @@ import { DivProps } from "react-html-props";
 import { SkillType } from "types/common";
 import skillData from "utils/skill-data";
 
-// export type SkillType = {
-//   title_first: string;
-//   title_second: string;
-//   items: {
-//     name: string;
-//     image: string;
-//   }[];
-// };
-
 const AboutSkills: FC<DivProps> = (props) => {
   return (
     <div {...props}>
       {skillData.map((skill: SkillType, index: number) => (
-        <div key={index}>
-          <h4>
+        <div className="py-5" key={index}>
+          <h4 className="mb-2">
             <span className="text-primary">{skill.title_first}</span>{" "}
             {skill.title_second}
           </h4>
-          <div className=" flex items-center flex-wrap ">
+          <div className="flex items-center flex-wrap">
             {skill.items.map((item: any) => (
               <div
-                className="flex items-center p-1 px-4 mr-2 my-1 bg-gray-100 rounded-full "
+                className="flex items-center p-1 px-4 mr-2 my-1 bg-gray-100 rounded-md "
                 key={item.name}
               >
                 <Image

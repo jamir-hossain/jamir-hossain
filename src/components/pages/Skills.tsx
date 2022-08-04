@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <PageTransition show={activeNav === "/#skills"}>
       <Breadcrumb title="Skills" />
-      <AboutSkills />
+      <AboutSkills className="px-6" />
     </PageTransition>
   );
 };
