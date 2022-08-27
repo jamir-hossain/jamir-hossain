@@ -22,12 +22,12 @@ const WorkingExperience: FC<DivProps> = (props) => {
             <tbody>
               <tr className="bg-white border-b">
                 <td>As a Front-end Developer (ReactJS)</td>
-                <td>July 2020 - July 2022</td>
+                <td>July 2021 - June 2022</td>
                 <td>UI-Lib</td>
               </tr>
               <tr>
                 <td>Junior Full-Stack Developer (ReactJS and Laravel)</td>
-                <td>July 2020 - July 2022</td>
+                <td>June 2022 - Ongoing</td>
                 <td>UI-Lib</td>
               </tr>
             </tbody>
