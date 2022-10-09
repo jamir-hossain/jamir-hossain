@@ -1,12 +1,20 @@
-import React from "react";
+import React, { FC } from "react";
 import useApp from "hooks/useApp";
 import navList from "utils/nav-list";
+import { DivProps } from "react-html-props";
 
-const AppNavbar = () => {
+interface Props extends DivProps {
+  className?: string;
+}
+
+const AppNavbar: FC<Props> = ({ className, ...props }) => {
   const { navHandler } = useApp();
 
   return (
-    <div className="flex items-center justify-between">
+    <div
+      className={`flex items-center justify-between ${className}`}
+      {...props}
+    >
       {navList.map((item) => {
         const { title, Icon, url } = item;
         return (

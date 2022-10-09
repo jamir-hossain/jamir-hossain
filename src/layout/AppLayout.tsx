@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import ProfileCard from "components/ProfileCard";
+import AppNavbar from "./AppNavbar";
 
 interface Props {
   children: ReactNode;
@@ -13,15 +14,13 @@ const AppLayout: FC<Props> = ({ children }) => {
           <li key={item}></li>
         ))}
       </ul>
-      <div className="absolute top-0 left-0 h-full w-full px-6 py-10 flex justify-center items-center ">
-        <div
-          className="container mx-auto overflow-hidden"
-          style={{ maxHeight: "700px", height: "100%" }}
-        >
-          <div
-            className="grid grid-cols-1 md:grid-cols-8"
-            style={{ maxHeight: "700px", height: "100%" }}
-          >
+      <div className="absolute top-0 left-0 h-full w-full block md:hidden">
+        <AppNavbar className="bg-white z-50" />
+        <div>{children}</div>
+      </div>
+      <div className="absolute top-0 left-0 h-full w-full px-6 py-10 hidden md:flex justify-center items-center">
+        <div className="container mx-auto md:max-h-[700px] h-full">
+          <div className="hidden max-h-[700px] h-full md:grid grid-cols-1 md:grid-cols-8 overflow-hidden">
             <div className="md:col-span-3 z-50">
               <ProfileCard />
             </div>

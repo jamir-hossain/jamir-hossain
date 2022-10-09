@@ -29,6 +29,7 @@ const skillData = [
     items: [
       { image: "/assets/skills/sass.png", name: "SASS" },
       { image: "/assets/skills/redux.png", name: "Redux" },
+      { image: "/assets/skills/redux.png", name: "RTK Query" },
       { image: "/assets/skills/react-query.png", name: "React-Query" },
       { image: "/assets/skills/node-js.png", name: "Node JS" },
       { image: "/assets/skills/express.png", name: "Express" },
