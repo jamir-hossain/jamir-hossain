@@ -10,7 +10,9 @@ const AboutSkills: FC<DivProps> = (props) => {
       {skillData.map((skill: SkillType, index: number) => (
         <div className="py-5" key={index}>
           <h4 className="mb-2">
-            <span className="text-primary">{skill.title_first}</span>{" "}
+            <span className="text-white md:text-primary">
+              {skill.title_first}
+            </span>{" "}
             {skill.title_second}
           </h4>
           <div className="flex items-center flex-wrap">

@@ -9,8 +9,8 @@ const Home: NextPage = () => {
   return (
     <>
       <About />
-      <Works />
       <Skills />
+      <Works />
       <Contact />
       <Achievements />
     </>

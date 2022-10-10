@@ -7,7 +7,7 @@ const navList = [
   {
     Icon: UserIcon,
     title: "About",
-    url: "",
+    url: "about",
   },
   {
     Icon: CodeIcon,

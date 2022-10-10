@@ -7,7 +7,8 @@ const Education: FC<DivProps> = (props) => {
     <div {...props}>
       <div className="overflow-x-hidden">
         <h4>
-          <span className="text-primary">Educational</span> Background
+          <span className="text-white md:text-primary">Educational</span>{" "}
+          Background
         </h4>
 
         <TableContainer>
@@ -31,7 +32,7 @@ const Education: FC<DivProps> = (props) => {
                 <td>*</td>
                 <td>2019-2020</td>
               </tr>
-              <tr>
+              <tr className="bg-white">
                 <td>Secondary School Certificate (SSC)</td>
                 <td>
                   UCEP Hafiz Mazumdar Sylhet

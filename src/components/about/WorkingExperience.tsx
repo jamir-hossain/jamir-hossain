@@ -7,7 +7,7 @@ const WorkingExperience: FC<DivProps> = (props) => {
     <div {...props}>
       <div className="overflow-x-hidden">
         <h4>
-          <span className="text-primary">Working</span> Experience
+          <span className="text-white md:text-primary">Working</span> Experience
         </h4>
 
         <TableContainer>
@@ -25,7 +25,7 @@ const WorkingExperience: FC<DivProps> = (props) => {
                 <td>July 2021 - June 2022</td>
                 <td>UI-Lib</td>
               </tr>
-              <tr>
+              <tr className="bg-white">
                 <td>Junior Full-Stack Developer (ReactJS and Laravel)</td>
                 <td>June 2022 - Ongoing</td>
                 <td>UI-Lib</td>

@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import useApp from "hooks/useApp";
 import navList from "utils/nav-list";
 import { DivProps } from "react-html-props";
+import { scrollToSection } from "utils/utils";
 
 interface Props extends DivProps {
   className?: string;
@@ -9,6 +10,11 @@ interface Props extends DivProps {
 
 const AppNavbar: FC<Props> = ({ className, ...props }) => {
   const { navHandler } = useApp();
+
+  const routeHandler = (url: string) => {
+    navHandler(`/#${url}`);
+    scrollToSection(url);
+  };
 
   return (
     <div
@@ -20,7 +26,7 @@ const AppNavbar: FC<Props> = ({ className, ...props }) => {
         return (
           <button
             key={title}
-            onClick={() => navHandler(url.length > 0 ? `/#${url}` : "/")}
+            onClick={() => routeHandler(url)}
             className="nav-btn hover:bg-gray-100"
           >
             <Icon className="w-5 mr-1 " />

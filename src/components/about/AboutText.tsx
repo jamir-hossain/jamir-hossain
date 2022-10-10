@@ -10,7 +10,7 @@ const AboutText: FC<DivProps> = (props) => {
     >
       <div className="md:col-span-3">
         <h5 className=" ">Hello! I’m Jamir Hossain</h5>
-        <p className=" text-justify ">
+        <p className="text-justify text-gray-100 md:text-gray-900 ">
           A Junior Full Stack Developer. Currently, I am learning many more
           about full-stack development and working with UI-Lib. I have been
           involved with programming to gain confidence and excellence using my

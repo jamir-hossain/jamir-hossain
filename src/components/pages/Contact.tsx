@@ -1,5 +1,5 @@
 import Breadcrumb from "components/Breadcrumb";
-import PageTransition from "components/PageTransition";
+import PageWrapper from "components/PageWrapper";
 import useApp from "hooks/useApp";
 import React, { useState } from "react";
 
@@ -8,16 +8,16 @@ const Contact = () => {
   const [ph, setPh] = useState({
     name: " ",
     email: " ",
-    description: "",
+    description: " ",
   });
   const phHandler = (text: any) => setPh({ ...ph, ...text });
 
   return (
-    <PageTransition show={activeNav === "/#contact"}>
+    <PageWrapper className="contact mb-[60px]" show={activeNav === "/#contact"}>
       <Breadcrumb title="Contact" />
-      <form className="max-w-[585px] w-full mx-auto mt-8">
+      <form className="max-w-[585px] w-full mx-auto mt-8 px-6 md:px0">
         <h1 className="text-[36px] font-semibold text-center">Get In Touch</h1>
-        <p className="text-lg text-gray-400 font-normal text-center mt-2 mb-12">
+        <p className="text-lg text-gray-100 md:text-gray-400 font-normal text-center mt-2 mb-12">
           Have any project? I’d love to hear from you{" "}
           <span className="text-red-500 text-xl">♥</span>
         </p>
@@ -80,12 +80,12 @@ const Contact = () => {
 
         <button
           type="submit"
-          className="px-6 py-3 rounded-md font-medium text-base flex items-center justify-center bg-primary text-white hover:bg-primary-dark transition-colors duration-200 mx-auto"
+          className="px-6 py-3 rounded-md font-medium text-base flex items-center justify-center bg-primary-light md:bg-primary text-gray-900 md:text-white hover:bg-primary md:hover:bg-primary-dark transition-colors duration-200 mx-auto"
         >
           Send Message
         </button>
       </form>
-    </PageTransition>
+    </PageWrapper>
   );
 };
 

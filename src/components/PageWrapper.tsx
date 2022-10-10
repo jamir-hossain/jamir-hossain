@@ -4,9 +4,10 @@ import SimpleBar from "simplebar-react";
 
 interface Props {
   show: boolean;
+  className: string;
   children: ReactNode;
 }
-const PageTransition: FC<Props> = ({ show, children }) => {
+const PageWrapper: FC<Props> = ({ show, className, children }) => {
   return (
     <>
       <Transition
@@ -21,22 +22,11 @@ const PageTransition: FC<Props> = ({ show, children }) => {
       >
         <SimpleBar style={{ height: "100%" }}>{children}</SimpleBar>
       </Transition>
-      <Transition
-        show={show}
-        enter=""
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave=""
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
-        className="block md:hidden bg-gray-50 w-full"
-      >
-        <SimpleBar style={{ height: "calc(100vh - 60px)" }}>
-          {children}
-        </SimpleBar>
-      </Transition>
+      <div className={`${className} block md:hidden h-full overflow-auto`}>
+        {children}
+      </div>
     </>
   );
 };
 
-export default PageTransition;
+export default PageWrapper;
