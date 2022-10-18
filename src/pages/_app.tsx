@@ -1,3 +1,4 @@
+import "swiper/css";
 import "styles/index.css";
 import Head from "next/head";
 import "styles/layout-bg.css";

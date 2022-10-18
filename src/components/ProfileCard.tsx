@@ -5,6 +5,7 @@ import useApp from "hooks/useApp";
 import DownloadIcon from "icons/DownloadIcon";
 import AwardIcon from "icons/AwardIcon";
 import Image from "next/image";
+import ReactTyped from "react-typed";
 
 const ProfileCard = () => {
   const { navHandler } = useApp();
@@ -41,6 +42,14 @@ const ProfileCard = () => {
         </div>
         <div className="text-center">
           <h4>Jamir Hossain</h4>
+          <p className=" text-primary font-semibold ">
+            <ReactTyped
+              strings={["Programmer", "Junior Full-Stack Developer"]}
+              typeSpeed={40}
+              backSpeed={40}
+              loop
+            />
+          </p>
         </div>
       </div>
 

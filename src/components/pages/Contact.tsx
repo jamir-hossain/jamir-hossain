@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <PageWrapper className="contact mb-[60px]" show={activeNav === "/#contact"}>
       <Breadcrumb title="Contact" />
-      <form className="max-w-[585px] w-full mx-auto mt-8 px-6 md:px0">
+      <form className="max-w-[585px] w-full mx-auto my-8 px-6 md:px0">
         <h1 className="text-[36px] font-semibold text-center">Get In Touch</h1>
         <p className="text-lg text-gray-100 md:text-gray-400 font-normal text-center mt-2 mb-12">
           Have any project? I’d love to hear from you{" "}

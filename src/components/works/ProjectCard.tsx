@@ -1,11 +1,9 @@
-import PrimaryIconButton from "components/PrimaryIconButton";
-import PrimaryTooltip from "components/PrimaryTooltip";
-import DesktopIcon from "icons/DesktopIcon";
-import DocIcon from "icons/DocIcon";
-import LinkIcon from "icons/LinkIcon";
-import Image from "next/image";
 import React, { FC } from "react";
+import DocIcon from "icons/DocIcon";
 import { ProjectType } from "types/common";
+import DesktopIcon from "icons/DesktopIcon";
+import PrimaryTooltip from "components/PrimaryTooltip";
+import PrimaryIconButton from "components/PrimaryIconButton";
 
 const ProjectCard: FC<{ project: ProjectType }> = ({ project }) => {
   return (
