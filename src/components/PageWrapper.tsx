@@ -1,6 +1,6 @@
-import { Transition } from "@headlessui/react";
-import React, { FC, ReactNode } from "react";
 import SimpleBar from "simplebar-react";
+import React, { FC, ReactNode } from "react";
+import { Transition } from "@headlessui/react";
 
 interface Props {
   show: boolean;
@@ -22,6 +22,7 @@ const PageWrapper: FC<Props> = ({ show, className, children }) => {
       >
         <SimpleBar style={{ height: "100%" }}>{children}</SimpleBar>
       </Transition>
+
       <div className={`${className} block md:hidden h-full overflow-auto`}>
         {children}
       </div>

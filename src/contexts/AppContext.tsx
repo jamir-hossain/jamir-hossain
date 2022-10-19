@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React, { FC, useState, createContext } from "react";
+import React, { FC, useState, createContext, useEffect } from "react";
 
 type AppContextType = {
   activeNav: string;
@@ -25,6 +25,12 @@ const AppContextProvider: FC<Props> = ({ children }) => {
       setTimeout(() => setActiveNav(value), 0);
     }
   };
+
+  useEffect(() => {
+    if (router.asPath === "/") {
+      navHandler("/#about");
+    }
+  }, [router]);
 
   return (
     <AppContext.Provider

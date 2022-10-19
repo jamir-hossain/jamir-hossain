@@ -10,7 +10,10 @@ const Works = () => {
   const { activeNav } = useApp();
   return (
     <>
-      <PageWrapper className="works mb-[60px]" show={activeNav === "/#works"}>
+      <PageWrapper
+        className="works mb-[10px] pt-[50px]"
+        show={activeNav === "/#works"}
+      >
         <Breadcrumb title="Works" />
 
         <div className="p-6">

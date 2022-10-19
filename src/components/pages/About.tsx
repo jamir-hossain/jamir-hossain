@@ -1,18 +1,19 @@
-import AboutText from "components/about/AboutText";
-import Education from "components/about/Education";
-import WorkingExperience from "components/about/WorkingExperience";
+import React from "react";
+import useApp from "hooks/useApp";
 import Breadcrumb from "components/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
-import useApp from "hooks/useApp";
-import React from "react";
+import Education from "components/about/Education";
+import AboutText from "components/about/AboutText";
+import WorkingExperience from "components/about/WorkingExperience";
 
 const About = () => {
   const { activeNav } = useApp();
+
   return (
     <>
       <PageWrapper
-        className="about mb-[60px]"
-        show={activeNav === "/" || activeNav === "/#about"}
+        className="about mb-[10px] pt-[50px]"
+        show={activeNav === "/#about"}
       >
         <Breadcrumb title="About Me" />
         <div className="p-6">

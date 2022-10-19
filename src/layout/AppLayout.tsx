@@ -1,6 +1,7 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC, ReactNode, useEffect, useState } from "react";
 import ProfileCard from "components/ProfileCard";
 import AppNavbar from "./AppNavbar";
+import Loading from "components/Loading";
 
 interface Props {
   children: ReactNode;
@@ -10,7 +11,7 @@ const AppLayout: FC<Props> = ({ children }) => {
   return (
     <>
       <div className="block md:hidden">
-        <AppNavbar className="bg-white fixed w-full z-50" />
+        <AppNavbar className={`bg-white fixed w-full z-50`} />
         <div>{children}</div>
       </div>
       <div className="layout">
@@ -26,7 +27,10 @@ const AppLayout: FC<Props> = ({ children }) => {
               <div className="md:col-span-3 z-50">
                 <ProfileCard />
               </div>
-              <div className="relative md:col-span-5">{children}</div>
+              <div className="relative md:col-span-5">
+                <Loading />
+                {children}
+              </div>
             </div>
           </div>
         </div>

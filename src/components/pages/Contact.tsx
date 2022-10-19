@@ -1,7 +1,7 @@
-import Breadcrumb from "components/Breadcrumb";
-import PageWrapper from "components/PageWrapper";
 import useApp from "hooks/useApp";
 import React, { useState } from "react";
+import Breadcrumb from "components/Breadcrumb";
+import PageWrapper from "components/PageWrapper";
 
 const Contact = () => {
   const { activeNav } = useApp();
@@ -13,7 +13,10 @@ const Contact = () => {
   const phHandler = (text: any) => setPh({ ...ph, ...text });
 
   return (
-    <PageWrapper className="contact mb-[60px]" show={activeNav === "/#contact"}>
+    <PageWrapper
+      className="contact mb-[10px] pt-[50px]"
+      show={activeNav === "/#contact"}
+    >
       <Breadcrumb title="Contact" />
       <form className="max-w-[585px] w-full mx-auto my-8 px-6 md:px0">
         <h1 className="text-[36px] font-semibold text-center">Get In Touch</h1>
