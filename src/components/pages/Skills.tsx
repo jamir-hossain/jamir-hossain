@@ -7,10 +7,7 @@ import React from "react";
 const Skills = () => {
   const { activeNav } = useApp();
   return (
-    <PageWrapper
-      className="skills mb-[10px] pt-[50px]"
-      show={activeNav === "/#skills"}
-    >
+    <PageWrapper className="skills pt-[90px]" show={activeNav === "/#skills"}>
       <Breadcrumb title="Skills" />
       <AboutSkills className="px-6" />
     </PageWrapper>

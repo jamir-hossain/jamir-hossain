@@ -2,6 +2,7 @@ import React, { FC, ReactNode, useEffect, useState } from "react";
 import ProfileCard from "components/ProfileCard";
 import AppNavbar from "./AppNavbar";
 import Loading from "components/Loading";
+import ReactTyped from "react-typed";
 
 interface Props {
   children: ReactNode;
@@ -11,7 +12,25 @@ const AppLayout: FC<Props> = ({ children }) => {
   return (
     <>
       <div className="block md:hidden">
-        <AppNavbar className={`bg-white fixed w-full z-50`} />
+        <div className="bg-white fixed w-full  z-50">
+          <div className="flex items-center justify-between px-2">
+            <div>
+              <h6>Jamir Hossain</h6>
+              <p className=" text-primary text-xs ">
+                <ReactTyped
+                  strings={["Programmer", "Junior Full-Stack Developer"]}
+                  typeSpeed={40}
+                  backSpeed={40}
+                  loop
+                />
+              </p>
+            </div>
+            <a href="#" className=" text-primary ">
+              CV
+            </a>
+          </div>
+          <AppNavbar />
+        </div>
         <div>{children}</div>
       </div>
       <div className="layout">

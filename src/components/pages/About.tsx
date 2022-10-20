@@ -11,10 +11,7 @@ const About = () => {
 
   return (
     <>
-      <PageWrapper
-        className="about mb-[10px] pt-[50px]"
-        show={activeNav === "/#about"}
-      >
+      <PageWrapper className="about pt-[90px]" show={activeNav === "/#about"}>
         <Breadcrumb title="About Me" />
         <div className="p-6">
           <AboutText />

@@ -21,7 +21,7 @@ const Achievements = () => {
 
   return (
     <PageWrapper
-      className="achievements mb-[10px] pt-[50px]"
+      className="achievements pt-[90px]"
       show={activeNav === "/#achievements"}
     >
       <Breadcrumb title="Achievements" />

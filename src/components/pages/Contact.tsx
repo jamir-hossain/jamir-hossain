@@ -14,7 +14,7 @@ const Contact = () => {
 
   return (
     <PageWrapper
-      className="contact mb-[10px] pt-[50px]"
+      className="contact mb-[10px] pt-[90px]"
       show={activeNav === "/#contact"}
     >
       <Breadcrumb title="Contact" />
