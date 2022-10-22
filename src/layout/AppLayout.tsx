@@ -1,8 +1,10 @@
-import React, { FC, ReactNode, useEffect, useState } from "react";
+import React, { FC, ReactNode } from "react";
 import ProfileCard from "components/ProfileCard";
-import AppNavbar from "./AppNavbar";
 import Loading from "components/Loading";
 import ReactTyped from "react-typed";
+import Image from "next/image";
+import AppNavbarMobile from "./AppNavbarMobile";
+import SimpleBar from "simplebar-react";
 
 interface Props {
   children: ReactNode;
@@ -12,27 +14,12 @@ const AppLayout: FC<Props> = ({ children }) => {
   return (
     <>
       <div className="block md:hidden">
-        <div className="bg-white fixed w-full  z-50">
-          <div className="flex items-center justify-between px-2">
-            <div>
-              <h6>Jamir Hossain</h6>
-              <p className=" text-primary text-xs ">
-                <ReactTyped
-                  strings={["Programmer", "Junior Full-Stack Developer"]}
-                  typeSpeed={40}
-                  backSpeed={40}
-                  loop
-                />
-              </p>
-            </div>
-            <a href="#" className=" text-primary ">
-              CV
-            </a>
-          </div>
-          <AppNavbar />
-        </div>
-        <div>{children}</div>
+        <AppNavbarMobile />
+        <SimpleBar style={{ height: "calc(100vh - 95px)" }}>
+          {children}
+        </SimpleBar>
       </div>
+
       <div className="layout">
         <ul className="bg-bubbles">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (

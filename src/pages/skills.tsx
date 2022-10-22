@@ -7,10 +7,10 @@ import React from "react";
 const Skills = () => {
   const { activeNav } = useApp();
   return (
-    <PageWrapper className="skills" show={activeNav === "/#skills"}>
+    <div>
       <Breadcrumb title="Skills" />
       <AboutSkills className="px-6" />
-    </PageWrapper>
+    </div>
   );
 };
 

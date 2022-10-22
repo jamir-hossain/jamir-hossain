@@ -57,13 +57,13 @@ const ProfileCard = () => {
         <AppNavbar />
 
         <div className="border-t border-gray-300 flex items-center justify-between">
-          <button
-            onClick={() => console.log("")}
+          <a
             className="nav-btn flex-row py-4"
+            href=" https://drive.google.com/u/0/uc?id=1zLtIYYqj0SSBS63-F1WW5QlzK14X0kn7&export=download"
           >
             Download CV
             <DownloadIcon className="w-3 ml-2 " />
-          </button>
+          </a>
           <button
             onClick={() => navHandler("/#achievements")}
             className="nav-btn flex-row py-4"

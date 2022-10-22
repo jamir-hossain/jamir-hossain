@@ -32,6 +32,23 @@ const AppContextProvider: FC<Props> = ({ children }) => {
     }
   }, [router]);
 
+  // useEffect(() => {
+  //   window.onresize = displayWindowSize;
+  //   window.onload = displayWindowSize;
+  //   function displayWindowSize() {
+  //     let myWidth = window.innerWidth;
+  //     if (myWidth > 767) {
+  //       const path = router.pathname.split("/");
+  //       console.log(path);
+  //       // navHandler(`/#${path[1]}`);
+  //     } else {
+  //       const asPath = router.asPath.split("#");
+  //       console.log(asPath);
+  //       // navHandler(router.asPath);
+  //     }
+  //   }
+  // }, []);
+
   return (
     <AppContext.Provider
       value={{

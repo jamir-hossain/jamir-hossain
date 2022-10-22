@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import useApp from "hooks/useApp";
 import Breadcrumb from "components/Breadcrumb";
-import PageWrapper from "components/PageWrapper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Controller } from "swiper";
 
@@ -20,7 +19,7 @@ const Achievements = () => {
   ];
 
   return (
-    <PageWrapper className="achievements" show={activeNav === "/#achievements"}>
+    <div>
       <Breadcrumb title="Achievements" />
       <div className="p-6">
         <div className="hidden md:grid grid-cols-2 gap-6">
@@ -62,7 +61,7 @@ const Achievements = () => {
           ))}
         </Swiper>
       </div>
-    </PageWrapper>
+    </div>
   );
 };
 

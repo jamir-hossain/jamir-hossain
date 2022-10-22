@@ -4,7 +4,7 @@ import { Transition } from "@headlessui/react";
 
 interface Props {
   show: boolean;
-  className: string;
+  className?: string;
   children: ReactNode;
 }
 const PageWrapper: FC<Props> = ({ show, className, children }) => {
