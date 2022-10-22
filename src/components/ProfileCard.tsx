@@ -24,7 +24,7 @@ const ProfileCard = () => {
             <Image
               width={216}
               height={216}
-              src="/assets/new-profile.JPG"
+              src="/assets/new-profile.jpg"
               alt="profile"
               className="rounded-full "
             />
