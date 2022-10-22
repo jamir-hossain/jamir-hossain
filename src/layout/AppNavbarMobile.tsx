@@ -1,39 +1,12 @@
-import React, { FC, useEffect, useState } from "react";
-import useApp from "hooks/useApp";
-import navList from "utils/nav-list";
-import { DivProps } from "react-html-props";
-import { scrollToSection } from "utils/utils";
-import ReactTyped from "react-typed";
 import Image from "next/image";
-import AppNavbar from "./AppNavbar";
+import React, { FC } from "react";
+import navList from "utils/nav-list";
+import ReactTyped from "react-typed";
 import { useRouter } from "next/router";
 import MoreMenu from "components/MoreMenu";
-import CodeIcon from "icons/CodeIcon";
-import MoreIcon from "icons/MoreIcon";
 
-interface Props extends DivProps {
-  className?: string;
-}
-
-const AppNavbarMobile: FC<Props> = ({ className, ...props }) => {
-  const { navHandler } = useApp();
+const AppNavbarMobile = () => {
   const router = useRouter();
-
-  const routeHandler = (url: string) => {
-    router.push(`/${url}`);
-  };
-
-  const [isSticky, setSticky] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        setSticky(true);
-      } else {
-        setSticky(false);
-      }
-    });
-  }, []);
 
   return (
     <div className="bg-white w-full z-50 sticky shadow-drop">
@@ -42,8 +15,8 @@ const AppNavbarMobile: FC<Props> = ({ className, ...props }) => {
           <Image
             width={36}
             height={36}
-            alt="profile"
-            src="/assets/new-profile.JPG"
+            alt="jamir-hossain"
+            src="/assets/new-profile.jpg"
             className="rounded-full"
           />
           <div className="pl-2">
@@ -66,7 +39,7 @@ const AppNavbarMobile: FC<Props> = ({ className, ...props }) => {
           return (
             <button
               key={title}
-              onClick={() => routeHandler(url)}
+              onClick={() => router.push(`/${url}`)}
               className="nav-btn hover:bg-gray-100"
             >
               <Icon className="w-5 mr-1 " />
