@@ -29,11 +29,11 @@ const AppLayout: FC<Props> = ({ children }) => {
 
         <div className="absolute top-0 left-0 h-full w-full px-6 py-10 hidden md:flex justify-center items-center">
           <div className="container mx-auto md:max-h-[700px] h-full">
-            <div className="hidden max-h-[700px] h-full md:grid grid-cols-1 md:grid-cols-8 overflow-hidden">
-              <div className="md:col-span-3 z-50">
+            <div className="hidden max-h-[700px] h-full md:grid grid-cols-1 md:grid-cols-3 overflow-hidden">
+              <div className="md:col-span-1 z-50">
                 <ProfileCard />
               </div>
-              <div className="relative md:col-span-5">
+              <div className="md:col-span-2 relative">
                 <Loading />
                 {children}
               </div>

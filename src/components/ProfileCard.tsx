@@ -6,12 +6,14 @@ import DownloadIcon from "icons/DownloadIcon";
 import AwardIcon from "icons/AwardIcon";
 import Image from "next/image";
 import ReactTyped from "react-typed";
+import SimpleBar from "simplebar-react";
 
 const ProfileCard = () => {
   const { navHandler } = useApp();
 
   return (
-    <Card className="h-full flex flex-col justify-between overflow-hidden">
+    <Card className="max-h-[700px] h-full flex flex-col justify-between overflow-hidden">
+      {/* <SimpleBar style={{ height: "100%" }}> */}
       <div>
         <div className="relative bg-gray-300 pb-10 overflow-hidden flex items-center justify-center ">
           <Image
@@ -73,6 +75,7 @@ const ProfileCard = () => {
           </button>
         </div>
       </div>
+      {/* </SimpleBar> */}
     </Card>
   );
 };
