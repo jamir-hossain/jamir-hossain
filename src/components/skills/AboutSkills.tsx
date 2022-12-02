@@ -18,7 +18,7 @@ const AboutSkills: FC<DivProps> = (props) => {
           <div className="flex items-center flex-wrap">
             {skill.items.map((item: any) => (
               <div
-                className="flex items-center p-1 px-4 mr-2 my-1 bg-gray-100 rounded-md "
+                className="flex items-center p-1 px-4 mr-2 my-1 bg-gray-100 dark:bg-gray-800 rounded-md "
                 key={item.name}
               >
                 <Image

@@ -7,7 +7,7 @@ interface Props extends DivProps {
 }
 const Card: FC<Props> = ({ children, className, ...props }) => {
   return (
-    <div className={`rounded-md bg-white shadow-md ${className}`} {...props}>
+    <div className={`rounded-md bg-white shadow-drop ${className}`} {...props}>
       {children}
     </div>
   );

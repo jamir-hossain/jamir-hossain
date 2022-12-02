@@ -27,7 +27,7 @@ const AppNavbar: FC<Props> = ({ className, ...props }) => {
           <button
             key={title}
             onClick={() => routeHandler(url)}
-            className="nav-btn hover:bg-gray-100"
+            className="nav-btn hover:bg-gray-100 dark:hover:bg-gray-900"
           >
             <Icon className="w-5 mr-1 " />
             {title}

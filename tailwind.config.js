@@ -31,6 +31,15 @@ module.exports = {
           DEFAULT: "#fff454",
           dark: "#b2aa3a",
         },
+        dark: {
+          400: "#2b3952",
+          secondary: "#0d2242",
+          primary: "#0a192f",
+        },
+        light: {
+          secondary: "#93d68a",
+          primary: "#78CC6D",
+        },
       },
       boxShadow: {
         default: "0px 3px 6px rgba(62, 66, 101, 0.05);", //shadow

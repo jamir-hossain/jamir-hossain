@@ -5,7 +5,7 @@ const TableContainer: FC<{ children: ReactNode }> = ({ children }) => {
     <div className="flex flex-col">
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-          <div className="overflow-hidden rounded border border-gray-300">
+          <div className="overflow-hidden rounded border border-gray-300 dark:border-gray-700">
             {children}
           </div>
         </div>

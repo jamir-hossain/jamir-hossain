@@ -5,10 +5,7 @@
 
 @layer components {
   .nav-btn {
-    @apply mx-1 py-1 w-full 
-      flex flex-col items-center justify-center 
-      hover:fill-primary hover:text-primary 
-      rounded-md transition duration-200;
+    @apply mx-1 py-1 w-full flex flex-col items-center justify-center dark:fill-white hover:fill-primary dark:hover:fill-primary hover:text-primary rounded-md transition duration-200;
   }
 }
 
@@ -63,11 +60,16 @@
 
 /* Background */
 .layout {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom right,
     #50a3a2 0%,
     #78cc6d 100%
-  ) !important;
+  ) !important; */
+  /* background: linear-gradient(
+    to bottom right,
+    #0a192f 0%,
+    #0d2242 100%
+  ) !important; */
   position: fixed;
   overflow: hidden;
   top: 0;

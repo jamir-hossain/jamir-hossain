@@ -12,8 +12,8 @@ const Education: FC<DivProps> = (props) => {
         </h4>
 
         <TableContainer>
-          <table className="min-w-full">
-            <thead className="bg-gray-100 border-b">
+          <table className="min-w-full border-gray-700">
+            <thead className="bg-gray-100 border-b border-gray-300 dark:border-gray-700 dark:bg-gray-900">
               <tr>
                 <th scope="col">Degree</th>
                 <th scope="col">Institute</th>
@@ -22,29 +22,33 @@ const Education: FC<DivProps> = (props) => {
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-white border-b">
-                <td>Diploma in Engineering (Electrical)</td>
-                <td>
+              <tr className="bg-white border-b border-gray-300 dark:border-gray-700 dark:bg-gray-800">
+                <td className="dark:text-white">
+                  Diploma in Engineering (Electrical)
+                </td>
+                <td className="dark:text-white">
                   Sylhet Polytechnic Institute,
                   <br />
                   Sylhet.
                 </td>
-                <td>*</td>
-                <td>2019-2020</td>
+                <td className="dark:text-white">*</td>
+                <td className="dark:text-white">2019-2020</td>
               </tr>
-              <tr className="bg-white">
-                <td>Secondary School Certificate (SSC)</td>
-                <td>
+              <tr className="bg-white dark:bg-gray-800">
+                <td className="dark:text-white">
+                  Secondary School Certificate (SSC)
+                </td>
+                <td className="dark:text-white">
                   UCEP Hafiz Mazumdar Sylhet
                   <br />
                   Technical School
                 </td>
-                <td>
+                <td className="dark:text-white">
                   GPA 5.00
                   <br />
                   (Out of 5)
                 </td>
-                <td>2017-2018</td>
+                <td className="dark:text-white">2017-2018</td>
               </tr>
             </tbody>
           </table>
