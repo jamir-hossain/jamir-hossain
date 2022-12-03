@@ -8,6 +8,7 @@ import Breadcrumb from "components/Breadcrumb";
 import AboutText from "components/about/AboutText";
 import WorkingExperience from "components/about/WorkingExperience";
 import Education from "components/about/Education";
+import ProfileCardMobile from "components/ProfileCardMobile";
 
 const Home = () => {
   return (
@@ -21,9 +22,8 @@ const Home = () => {
       </div>
 
       <div className="block md:hidden">
-        <Breadcrumb title="About Me" />
-        <div className="p-6">
-          <AboutText />
+        <div className="px-4 py-6">
+          <ProfileCardMobile />
           <WorkingExperience className="py-10" />
           <Education />
         </div>

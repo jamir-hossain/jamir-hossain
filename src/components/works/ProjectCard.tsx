@@ -7,7 +7,7 @@ import PrimaryIconButton from "components/PrimaryIconButton";
 
 const ProjectCard: FC<{ project: ProjectType }> = ({ project }) => {
   return (
-    <div className="shadow-drop bg-white rounded-lg overflow-hidden h-full">
+    <div className="shadow-drop bg-white dark:bg-gray-800 rounded-lg overflow-hidden h-full">
       <div
         className="group relative h-[260px] bg-cover"
         style={{ backgroundImage: `url(${project.thumbnail})` }}
@@ -40,7 +40,7 @@ const ProjectCard: FC<{ project: ProjectType }> = ({ project }) => {
           {project.technologies.map((item) => (
             <span
               key={item}
-              className="bg-gray-800 text-white px-2 py-1 text-xs rounded-[3px] m-1"
+              className="bg-gray-800 dark:bg-gray-300 text-white dark:text-gray-800 px-2 py-1 text-xs rounded-[3px] m-1"
             >
               {item}
             </span>

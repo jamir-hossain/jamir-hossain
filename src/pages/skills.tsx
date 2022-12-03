@@ -1,17 +1,8 @@
-import Breadcrumb from "components/Breadcrumb";
-import PageWrapper from "components/PageWrapper";
-import AboutSkills from "components/skills/AboutSkills";
-import useApp from "hooks/useApp";
 import React from "react";
+import AboutSkills from "components/skills/AboutSkills";
 
 const Skills = () => {
-  const { activeNav } = useApp();
-  return (
-    <div>
-      <Breadcrumb title="Skills" />
-      <AboutSkills className="px-6" />
-    </div>
-  );
+  return <AboutSkills className="px-4 py-6" />;
 };
 
 export default Skills;

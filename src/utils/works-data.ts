@@ -8,7 +8,7 @@ const worksData = [
       "Bio-Link is SASS application. It's build to create beautiful bio-link page, qr-code, link-visitor tracking and so on features it have.",
     features: null,
     app_type: "Full-Stack Application",
-    technologies: ["Laravel", "MySQL", "Bootstrap 5"],
+    technologies: ["Laravel", "MySQL", "Stripe", "Bootstrap 5"],
     live_url: "https://mylinks.ui-lib.com/",
   },
   {

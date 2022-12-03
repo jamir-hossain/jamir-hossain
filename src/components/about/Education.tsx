@@ -12,13 +12,21 @@ const Education: FC<DivProps> = (props) => {
         </h4>
 
         <TableContainer>
-          <table className="min-w-full border-gray-700">
+          <table className="min-w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900">
             <thead className="bg-gray-100 border-b border-gray-300 dark:border-gray-700 dark:bg-gray-900">
               <tr>
-                <th scope="col">Degree</th>
-                <th scope="col">Institute</th>
-                <th scope="col">Result</th>
-                <th scope="col">Session</th>
+                <th scope="col" className="dark:text-white">
+                  Degree
+                </th>
+                <th scope="col" className="dark:text-white">
+                  Institute
+                </th>
+                <th scope="col" className="dark:text-white">
+                  Result
+                </th>
+                <th scope="col" className="dark:text-white">
+                  Session
+                </th>
               </tr>
             </thead>
             <tbody>

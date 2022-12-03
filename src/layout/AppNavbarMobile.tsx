@@ -8,8 +8,14 @@ import MoreMenu from "components/MoreMenu";
 const AppNavbarMobile = () => {
   const router = useRouter();
 
+  const activeNav = (route: string) => {
+    if (router.pathname === route) {
+      return "text-primary";
+    }
+  };
+
   return (
-    <div className="bg-white w-full z-50 sticky shadow-drop">
+    <div className="bg-white dark:bg-gray-900 w-full z-50 sticky shadow-drop">
       <div className="flex items-center justify-between px-2">
         <div className="flex items-center">
           <Image
@@ -40,7 +46,7 @@ const AppNavbarMobile = () => {
             <button
               key={title}
               onClick={() => router.push(`/${url}`)}
-              className="nav-btn hover:bg-gray-100"
+              className={`nav-btn ${activeNav(`/${url}`)}`}
             >
               <Icon className="w-5 mr-1 " />
               {title}

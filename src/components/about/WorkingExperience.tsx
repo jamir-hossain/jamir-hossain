@@ -11,24 +11,34 @@ const WorkingExperience: FC<DivProps> = (props) => {
         </h4>
 
         <TableContainer>
-          <table className="min-w-full ">
-            <thead className="bg-gray-100 border-b">
+          <table className="min-w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900">
+            <thead className="bg-gray-100 border-b border-gray-300 dark:border-gray-700 dark:bg-gray-900">
               <tr>
-                <th scope="col">Role</th>
-                <th scope="col">Duration</th>
-                <th scope="col">Company</th>
+                <th scope="col" className="dark:text-white">
+                  Role
+                </th>
+                <th scope="col" className="dark:text-white">
+                  Duration
+                </th>
+                <th scope="col" className="dark:text-white">
+                  Company
+                </th>
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-white border-b">
-                <td>As a Front-end Developer (ReactJS)</td>
-                <td>July 2021 - June 2022</td>
-                <td>UI-Lib</td>
+              <tr className="bg-white border-b border-gray-300 dark:border-gray-700 dark:bg-gray-800">
+                <td className="dark:text-white">
+                  As a Front-end Developer (ReactJS)
+                </td>
+                <td className="dark:text-white">July 2021 - June 2022</td>
+                <td className="dark:text-white">UI-Lib</td>
               </tr>
-              <tr className="bg-white">
-                <td>Junior Full-Stack Developer (ReactJS and Laravel)</td>
-                <td>June 2022 - Ongoing</td>
-                <td>UI-Lib</td>
+              <tr className="bg-white dark:bg-gray-800">
+                <td className="dark:text-white">
+                  Junior Full-Stack Developer (ReactJS and Laravel)
+                </td>
+                <td className="dark:text-white">June 2022 - Ongoing</td>
+                <td className="dark:text-white">UI-Lib</td>
               </tr>
             </tbody>
           </table>
