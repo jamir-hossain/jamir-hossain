@@ -1,15 +1,30 @@
 import React, { FC, useState } from "react";
+import TextArea from "./TextArea";
+import TextInput from "./TextInput";
+import axios from "axios";
 
 const ContactForm: FC<{ className?: string }> = ({ className }) => {
-  const [ph, setPh] = useState({
-    name: " ",
-    email: " ",
-    description: " ",
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    description: "",
   });
-  const phHandler = (text: any) => setPh({ ...ph, ...text });
+  const formDataHandler =
+    (prop: string) =>
+    (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      setFormData({ ...formData, [prop]: event.target.value });
+    };
+
+  // sendEmail
+  const onSubmit = async (e: any) => {
+    e.preventDefault();
+    const rest = await axios.post("/api/send-email", formData);
+    console.log(rest);
+  };
 
   return (
     <form
+      onSubmit={onSubmit}
       className={`max-w-[585px] w-full mx-auto my-8 px-4 md:px-0 ${className}`}
     >
       <h1 className="text-[36px] font-semibold text-center">Get In Touch</h1>
@@ -17,62 +32,34 @@ const ContactForm: FC<{ className?: string }> = ({ className }) => {
         Have any project? I’d love to hear from you{" "}
         <span className="text-red-500 text-xl">♥</span>
       </p>
-      <div className="mb-5 relative w-full bg-white dark:bg-gray-800 group rounded-md">
-        <input
-          id="name"
-          type="text"
-          name="name"
-          className="block p-4 rounded-md w-full text-xs font-normal text-gray-900 dark:text-white placeholder:text-gray-700 dark:placeholder:text-gray-600 bg-transparent outline outline-1 outline-gray-300 dark:outline-gray-700 appearance-none focus:outline-primary dark:focus:outline-primary peer"
-          placeholder={ph.name}
-          onFocus={() => phHandler({ name: "Type Here" })}
-          onBlur={() => phHandler({ name: " " })}
-          required
-        />
-        <label
-          htmlFor="name"
-          className="ml-[14px] z-[1] flex items-center px-1 rounded-[3px] peer-focus:font-medium absolute bg-white dark:bg-gray-800 text-xs font-normal text-gray-700 dark:text-gray-300 duration-300 transform -translate-y-[20px] scale-75 top-3 peer-focus:z-10 origin-[0] peer peer-disabled:bg-green-500 peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-[4.5px] peer-focus:scale-75 peer-focus:-translate-y-[20px]"
-        >
-          Name
-        </label>
-      </div>
-
-      <div className="mb-5 relative w-full bg-white dark:bg-gray-800 group rounded-md">
-        <input
-          id="email"
-          type="email"
-          name="email"
-          className="block p-4 rounded-md w-full text-xs font-normal text-gray-900 dark:text-white placeholder:text-gray-700 dark:placeholder:text-gray-600 bg-transparent outline outline-1 outline-gray-300 dark:outline-gray-700 appearance-none focus:outline-primary dark:focus:outline-primary peer"
-          placeholder={ph.email}
-          onFocus={() => phHandler({ email: "Type your email" })}
-          onBlur={() => phHandler({ email: " " })}
-          required
-        />
-        <label
-          htmlFor="email"
-          className="ml-[14px] z-[1] flex items-center px-1 rounded-[3px] peer-focus:font-medium absolute bg-white dark:bg-gray-800 text-xs font-normal text-gray-700 dark:text-gray-300 duration-300 transform -translate-y-[20px] scale-75 top-3 peer-focus:z-10 origin-[0] peer peer-disabled:bg-green-500 peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-[4.5px] peer-focus:scale-75 peer-focus:-translate-y-[20px]"
-        >
-          Email
-        </label>
-      </div>
-
-      <div className="mb-6 relative w-full bg-white dark:bg-gray-800 group rounded-md">
-        <textarea
-          rows={6}
-          id="description"
-          name="description"
-          className="block p-4 rounded-md w-full text-xs font-normal text-gray-900 dark:text-white placeholder:text-gray-700 dark:placeholder:text-gray-600 bg-transparent outline outline-1 outline-gray-300 dark:outline-gray-700 appearance-none focus:outline-primary dark:focus:outline-primary peer"
-          placeholder={ph.description}
-          onFocus={() => phHandler({ description: "Type description" })}
-          onBlur={() => phHandler({ description: " " })}
-          required
-        ></textarea>
-        <label
-          htmlFor="description"
-          className="ml-[14px] z-[1] flex items-center px-1 rounded-[3px] peer-focus:font-medium absolute bg-white dark:bg-gray-800 text-xs font-normal text-gray-700 dark:text-gray-300 duration-300 transform -translate-y-[20px] scale-75 top-3 peer-focus:z-10 origin-[0] peer peer-disabled:bg-green-500 peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-[4.5px] peer-focus:scale-75 peer-focus:-translate-y-[20px]"
-        >
-          Description
-        </label>
-      </div>
+      <TextInput
+        id="name"
+        name="name"
+        type="text"
+        label="Name"
+        placeHolder="Type Your Name"
+        onChange={formDataHandler("name")}
+        value={formData.name}
+        required
+      />
+      <TextInput
+        id="email"
+        name="email"
+        type="email"
+        label="Email"
+        placeHolder="Type Your Email"
+        onChange={formDataHandler("email")}
+        value={formData.email}
+        required
+      />
+      <TextArea
+        id="description"
+        name="description"
+        label="Description"
+        onChange={formDataHandler("description")}
+        value={formData.description}
+        required
+      />
 
       <button
         type="submit"

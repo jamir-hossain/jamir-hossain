@@ -2,7 +2,7 @@ const worksData = [
   {
     id: 1,
     name: "Bio-Link",
-    title: "Full-Stack Bio-Link Creator",
+    title: "Full-Stack Bio-Link Creator Project",
     thumbnail: "/assets/projects/bio-link.png",
     description:
       "Bio-Link is SASS application. It's build to create beautiful bio-link page, qr-code, link-visitor tracking and so on features it have.",
@@ -28,7 +28,7 @@ const worksData = [
       "Laravel",
       "MySQL",
     ],
-    live_url: "",
+    live_url: "https://biponi-next.vercel.app/",
   },
   {
     id: 3,

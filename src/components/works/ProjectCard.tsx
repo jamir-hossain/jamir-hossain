@@ -4,6 +4,7 @@ import { ProjectType } from "types/common";
 import DesktopIcon from "icons/DesktopIcon";
 import PrimaryTooltip from "components/PrimaryTooltip";
 import PrimaryIconButton from "components/PrimaryIconButton";
+import NextLink from "components/NextLink";
 
 const ProjectCard: FC<{ project: ProjectType }> = ({ project }) => {
   return (
@@ -26,9 +27,11 @@ const ProjectCard: FC<{ project: ProjectType }> = ({ project }) => {
           </PrimaryTooltip>
 
           <PrimaryTooltip title="Preview">
-            <PrimaryIconButton>
-              <DesktopIcon className="w-5 h-5 fill-white" />
-            </PrimaryIconButton>
+            <a href={project.live_url} rel="noreferrer" target="_blank">
+              <PrimaryIconButton>
+                <DesktopIcon className="w-5 h-5 fill-white" />
+              </PrimaryIconButton>
+            </a>
           </PrimaryTooltip>
         </div>
       </div>
