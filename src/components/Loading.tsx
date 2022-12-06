@@ -8,7 +8,7 @@ const Loading = () => {
   return (
     <>
       {activeNav === "/" && (
-        <div className="hidden md:flex justify-center items-center absolute top-4 bottom-4 m-auto bg-gray-50 rounded-r-lg w-full ">
+        <div className="hidden md:flex justify-center items-center absolute top-4 bottom-4 m-auto bg-gray-50 dark:bg-dark-400 rounded-r-lg w-full ">
           <LoadingIcon />
         </div>
       )}

@@ -11,9 +11,7 @@ handler.post(async (req: NextApiRequest, res: NextApiResponse) => {
     const { name, email, description } = req.body;
     await sendEmail(name, email, description);
 
-    return res
-      .status(200)
-      .json({ message: "Check your email for password reset" });
+    return res.status(200).json({ message: "Email successfully sent" });
   } catch (error: any) {
     throw new Error(error.message);
   }

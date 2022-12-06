@@ -10,7 +10,9 @@ const Contact = () => {
   return (
     <PageWrapper className="contact mb-[10px]" show={activeNav === "/#contact"}>
       <Breadcrumb title="Contact" />
-      <ContactForm />
+      <div className="px-6">
+        <ContactForm />
+      </div>
     </PageWrapper>
   );
 };
