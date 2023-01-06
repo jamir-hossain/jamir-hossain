@@ -15,7 +15,7 @@ const ProfileCard = () => {
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 shadow-drop rounded-2xl overflow-hidden">
       <SimpleBar className="h-full flex flex-col justify-between">
-        <div className="relative bg-gray-300 dark:bg-gray-700 pb-8 pt-6 overflow-hidden flex flex-col items-center justify-center">
+        <div className="relative bg-gray-300 dark:bg-gray-700 pb-10 pt-6 overflow-hidden flex flex-col items-center justify-center">
           <Image
             width={340}
             height={340}
@@ -50,7 +50,7 @@ const ProfileCard = () => {
           <ThemeControl />
         </div>
 
-        <div>
+        <div className="mt-2">
           <AppNavbar />
           <div className="border-t border-gray-300 dark:border-gray-600 flex items-center justify-between">
             <a

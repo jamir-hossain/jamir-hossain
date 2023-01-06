@@ -32,7 +32,7 @@ const Education: FC<DivProps> = (props) => {
             <tbody>
               <tr className="bg-white border-b border-gray-300 dark:border-gray-700 dark:bg-gray-800">
                 <td className="dark:text-white">
-                  Diploma in Engineering (Electrical)
+                  Diploma in Electrical Engineering
                 </td>
                 <td className="dark:text-white">
                   Sylhet Polytechnic Institute,

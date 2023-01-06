@@ -26,18 +26,18 @@ const WorkingExperience: FC<DivProps> = (props) => {
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-white border-b border-gray-300 dark:border-gray-700 dark:bg-gray-800">
-                <td className="dark:text-white">
-                  As a Front-end Developer (ReactJS)
-                </td>
-                <td className="dark:text-white">July 2021 - June 2022</td>
-                <td className="dark:text-white">UI-Lib</td>
-              </tr>
               <tr className="bg-white dark:bg-gray-800">
                 <td className="dark:text-white">
-                  Junior Full-Stack Developer (ReactJS and Laravel)
+                  Jr. Full-Stack Developer (React & Laravel)
                 </td>
                 <td className="dark:text-white">June 2022 - Ongoing</td>
+                <td className="dark:text-white">UI-Lib</td>
+              </tr>
+              <tr className="bg-white border-b border-gray-300 dark:border-gray-700 dark:bg-gray-800">
+                <td className="dark:text-white">
+                  As a Front-end Developer (React)
+                </td>
+                <td className="dark:text-white">July 2021 - June 2022</td>
                 <td className="dark:text-white">UI-Lib</td>
               </tr>
             </tbody>

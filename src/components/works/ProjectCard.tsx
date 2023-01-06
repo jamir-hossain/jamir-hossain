@@ -1,10 +1,5 @@
 import React, { FC } from "react";
-import DocIcon from "icons/DocIcon";
 import { ProjectType } from "types/common";
-import DesktopIcon from "icons/DesktopIcon";
-import PrimaryTooltip from "components/PrimaryTooltip";
-import PrimaryIconButton from "components/PrimaryIconButton";
-import NextLink from "components/NextLink";
 
 const ProjectCard: FC<{ project: ProjectType }> = ({ project }) => {
   return (
@@ -13,27 +8,13 @@ const ProjectCard: FC<{ project: ProjectType }> = ({ project }) => {
         className="group relative h-[260px] bg-cover"
         style={{ backgroundImage: `url(${project.thumbnail})` }}
       >
-        <div
+        <a
+          href={project.live_url}
+          target="_blank"
+          rel="noreferrer"
           className="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 cursor-pointer transition-opacity duration-200 flex items-end justify-center pb-4"
-          style={{
-            background:
-              "linear-gradient(180deg,#020024 0%,rgba(9,9,121,0) 0%,rgba(0,0,0,.517244) 80%,rgba(0,0,0,.872987) 100%)",
-          }}
-        >
-          <PrimaryTooltip title="More Details" className="mr-2">
-            <PrimaryIconButton>
-              <DocIcon className="w-5 h-5 -rotate-90 fill-white" />
-            </PrimaryIconButton>
-          </PrimaryTooltip>
-
-          <PrimaryTooltip title="Preview">
-            <a href={project.live_url} rel="noreferrer" target="_blank">
-              <PrimaryIconButton>
-                <DesktopIcon className="w-5 h-5 fill-white" />
-              </PrimaryIconButton>
-            </a>
-          </PrimaryTooltip>
-        </div>
+          style={{ background: "linear-gradient(180deg,#020024 0%,rgba(9,9,121,0) 0%,rgba(0,0,0,.517244) 80%,rgba(0,0,0,.872987) 100%)" }}
+        ></a>
       </div>
       <div className="py-2 px-4 border-t border-gray-100">
         <h5 className="mb-2">{project.name}</h5>
@@ -43,7 +24,7 @@ const ProjectCard: FC<{ project: ProjectType }> = ({ project }) => {
           {project.technologies.map((item) => (
             <span
               key={item}
-              className="bg-gray-800 dark:bg-gray-300 text-white dark:text-gray-800 px-2 py-1 text-xs rounded-[3px] m-1"
+              className="bg-gray-100 dark:bg-dark-400 text-gray-900 dark:text-white px-2 py-1 text-xs rounded-[3px] m-1"
             >
               {item}
             </span>
