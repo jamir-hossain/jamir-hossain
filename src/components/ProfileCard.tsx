@@ -55,7 +55,7 @@ const ProfileCard = () => {
           <div className="border-t border-gray-300 dark:border-gray-600 flex items-center justify-between">
             <a
               className="nav-btn flex-row py-4"
-              href="https://drive.google.com/u/0/uc?id=1zLtIYYqj0SSBS63-F1WW5QlzK14X0kn7&export=download"
+              href="https://github.com/jamir-hossain/jamir-hossain/raw/main/cv.pdf"
             >
               Download CV
               <DownloadIcon className="w-3 ml-2" />

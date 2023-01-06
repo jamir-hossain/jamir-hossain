@@ -49,7 +49,7 @@ const MoreMenu = () => {
               <Menu.Item>
                 <a
                   className="group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                  href="https://drive.google.com/u/0/uc?id=1zLtIYYqj0SSBS63-F1WW5QlzK14X0kn7&export=download"
+                  href="https://github.com/jamir-hossain/jamir-hossain/raw/main/cv.pdf"
                 >
                   Download CV
                   <DownloadIcon className="w-3 ml-2 dark:fill-white" />
