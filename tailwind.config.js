@@ -6,6 +6,7 @@ module.exports = {
       screens: {
         xl: "1200px",
         "2xl": "1280px",
+        "3xl": "1420px",
       },
       fontFamily: {
         sans: ["Nunito Sans", "sans-serif"],
@@ -22,24 +23,17 @@ module.exports = {
           dark: "#0b815a",
         },
         primary: {
-          light: "#93d68a",
-          DEFAULT: "#78CC6D",
-          dark: "#548e4c",
+          light: "#F5AD00",
+          DEFAULT: "#FFB400",
+          dark: "#b27d00",
         },
         secondary: {
           light: "#fff676",
           DEFAULT: "#fff454",
           dark: "#b2aa3a",
         },
-        dark: {
-          400: "#2b3952",
-          secondary: "#0d2242",
-          primary: "#0a192f",
-        },
-        light: {
-          secondary: "#93d68a",
-          primary: "#78CC6D",
-        },
+        dark: "#15141B",
+        light: "#FFFFFF",
       },
       boxShadow: {
         default: "0px 3px 6px rgba(62, 66, 101, 0.05);", //shadow
