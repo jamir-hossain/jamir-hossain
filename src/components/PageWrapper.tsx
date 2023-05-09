@@ -18,9 +18,11 @@ const PageWrapper: FC<Props> = ({ show, className, children }) => {
         leave="transition ease-in-out duration-1000 transform"
         leaveFrom="translate-x-0 opacity-100"
         leaveTo="-translate-x-full opacity-0"
-        className="hidden md:block absolute top-10 3xl:top-[100px] bottom-0 m-auto rounded-r-lg w-full"
+        className="h-screen"
       >
-        <SimpleBar style={{ height: "100%" }}>{children}</SimpleBar>
+        <SimpleBar style={{ height: "100%" }} className="pt-10 3xl:pt-[100px]">
+          {children}
+        </SimpleBar>
       </Transition>
 
       <div className={`${className} block md:hidden h-full overflow-auto`}>

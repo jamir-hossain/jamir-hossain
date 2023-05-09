@@ -18,19 +18,19 @@ const AppLayout: FC<Props> = ({ children }) => {
         </SimpleBar>
       </div>
 
-      <div className="layout bg-light dark:bg-dark">
-        <ul className="bg-bubbles">
+      <div className="h-screen overflow-hidden bg-light dark:bg-dark">
+        {/* <ul className="bg-bubbles">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
             <li key={item}></li>
           ))}
-        </ul>
+        </ul> */}
 
-        <div className="container mx-auto h-full">
+        <div className="container relative mx-auto h-full">
           <div className="grid grid-cols-12 h-full">
             <div className="md:col-span-4">
               <ProfileCard />
             </div>
-            <div className="md:col-span-8 pt-[100px]">
+            <div className="md:col-span-8">
               <Loading />
               {children}
             </div>

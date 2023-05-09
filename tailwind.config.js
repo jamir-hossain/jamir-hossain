@@ -51,6 +51,7 @@ module.exports = {
       },
       dropShadow: {
         "primary-glow": "0px 11px 25px rgba(73, 123, 254, 0.3)",
+        profile: "0px 10px 60px 0px rgba(0, 0, 0, 0.08)",
       },
     },
   },
