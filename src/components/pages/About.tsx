@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <PageWrapper className="about" show={activeNav === "/#about"}>
-      <Breadcrumb title="About Me" />
+      <Breadcrumb first="I’M Jamir" last="Hossian" />
       <div className="p-6">
         <AboutText />
         <WorkingExperience className="py-10" />

@@ -20,7 +20,10 @@ const PageWrapper: FC<Props> = ({ show, className, children }) => {
         leaveTo="-translate-x-full opacity-0"
         className="h-screen"
       >
-        <SimpleBar style={{ height: "100%" }} className="pt-10 3xl:pt-[100px]">
+        <SimpleBar
+          style={{ height: "100%" }}
+          className={`${className} pt-10 3xl:pt-[100px]`}
+        >
           {children}
         </SimpleBar>
       </Transition>
