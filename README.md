@@ -6,16 +6,15 @@ I am a Self-Taught and Creative web developer with a deep interest in JavaScript
 
 - 🔭 I’m a Self-Taught developer
 - 🌱 Currently I learning everything
-- 👯 I’m looking to join full time job
 - ⚡ Fun fact: I love to learn and explore the programming
 
 :coffee: &emsp;Connect with me!
 
-[![Website Badge](https://img.shields.io/badge/Website-393962?style=for-the-badge&logo=atom)](https://jamir-hossain.vercel.app/)
+[![Website Badge](https://img.shields.io/badge/Website-393962?style=for-the-badge&logo=atom)](https://contact-jamir.vercel.app)
 [![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/jamirhossain203/)
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jamir-hossain/)
 [![Mail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact.jamir@gmail.com)
-[![CV Badge](https://img.shields.io/badge/DownloadCV-D14836?style=for-the-badge&color=indigo)](https://drive.google.com/u/0/uc?id=1zLtIYYqj0SSBS63-F1WW5QlzK14X0kn7&export=download)
+[![CV Badge](https://img.shields.io/badge/DownloadCV-D14836?style=for-the-badge&color=indigo)](https://github.com/jamir-hossain/contact-jamir/main/cv.pdf)
 
 <!-- ## Programming knowledge with
 ### Expertise
