@@ -2,7 +2,7 @@
 
 ## Hi there <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" alt="hi">
 
-I am a Junior Web Developer with 3 years of experience in JavaScript and PHP and their frameworks like React, Nextjs, Laravel. I have been involved with programming to gain confidence and excellence using my potential in the field of “web development”, and express my innovative creative skills for self and company growth.
+I am a Web Developer with 3 years of experience in JavaScript and PHP and their frameworks like React, Nextjs, Laravel. I have been involved with programming to gain confidence and excellence using my potential in the field of “web development”, and express my innovative creative skills for self and company growth.
 
 - 🌱 Currently I learning everything
 - ⚡ Fun fact: I love to learn and explore the programming
