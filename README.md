@@ -10,10 +10,10 @@ Full-Stack Developer with 4+ years of experience crafting scalable web applicati
 :coffee: &emsp;Connect with me!
 
 [![Website Badge](https://img.shields.io/badge/Website-393962?style=for-the-badge&logo=atom)](https://contact-jamir.vercel.app)
-[![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/jamirhossain203/)
-[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jamir-hossain/)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jamir-hossain/)
 [![Mail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact.jamir@gmail.com)
-[![CV Badge](https://img.shields.io/badge/DownloadCV-D14836?style=for-the-badge&color=indigo)](https://github.com/jamir-hossain/contact-jamir/main/cv.pdf)
+[![Medium Badge](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@contact.jamir)
+[![Dev.to Badge](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/jamir_hossain_8800f85fdd5)
 
 <!-- ## Programming knowledge with
 ### Expertise
