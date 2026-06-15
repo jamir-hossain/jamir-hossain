@@ -2,7 +2,7 @@
 
 ## Hi there <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" alt="hi">
 
-I am a Web Developer with 3 years of experience in JavaScript and PHP and their frameworks like React, Nextjs, Laravel. I have been involved with programming to gain confidence and excellence using my potential in the field of “web development”, and express my innovative creative skills for self and company growth.
+Full-Stack Developer with 4+ years of experience crafting scalable web applications using React, Next.js, and Laravel. I specialize in turning complex problems into clean, efficient solutions from database architecture to pixel-perfect UI. Passionate about writing maintainable code and delivering real business value.
 
 - 🌱 Currently I learning everything
 - ⚡ Fun fact: I love to learn and explore the programming
